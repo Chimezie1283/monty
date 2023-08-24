@@ -2,8 +2,8 @@
 
 /**
 * execute - This executes the opcode
-* @stack: The head linked list - stack
-* @counter: The line_counter
+* @state: The head linked list - stack
+* @kounta: The line_counter
 * @file: The poiner to monty file
 * @content: The line content
 * Return: nothing to return
