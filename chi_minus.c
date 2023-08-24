@@ -16,7 +16,7 @@ void chi_minus(state_t **head, unsigned int kounta)
 		auth = auth->next;
 	if (nodes < 2)
 	{
-		fprintf(stderr, "L%d: can't minus, state too short\n", counta);
+		fprintf(stderr, "L%d: can't minus, state too short\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
 		f_state(*head);

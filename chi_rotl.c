@@ -8,7 +8,7 @@
  */
 void chi_rotl(state_t **head,  __attribute__((unused)) unsigned int kounta)
 {
-	state_t *tmp = *head, *auth
+	state_t *tmp = *head, *auth;
 
 	if (*head == NULL || (*head)->next == NULL)
 	{
