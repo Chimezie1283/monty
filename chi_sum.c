@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * chi_sum - This adds the top two elements of the stack.
+ * chi_add - This adds the top two elements of the stack.
  * @head: The stack head
  * @Kounta: The line number
  * Return: nothing to return
@@ -19,7 +19,7 @@ void chi_sum(state_t **head, unsigned int kounta)
 	}
 	if (lent < 2)
 	{
-		fprintf(stderr, "L%d: can't add, state too short\n", kounta);
+		fprintf(stderr, "L%d: can't add, stack too short\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
 		f_state(*head);

@@ -11,22 +11,22 @@
 int execute(char *content, state_t **state, unsigned int kounta, FILE *file)
 {
 	instruction_t opst[] = {
-				{"push", chi_push_f}, {"pall_f", chi_pall_f},
-				{"print_f", chi_print_f},
+				{"push", chi_push}, {"pall", chi_pall},
+				{"print", chi_print},
 				{"pop", chi_pop},
-				{"change", chi_change},
-				{"sum", chi_sum},
-				{"p", chi_p},
-				{"minus", chi_minus},
-				{"share", chi_share},
-				{"increase", chi_increase},
-				{"mild", chi_mild},
-				{"char", chi_char},
-				{"string", chi_string},
+				{"swap", chi_swap},
+				{"add", chi_add},
+				{"nop", chi_nop},
+				{"sub", chi_sub},
+				{"div", chi_div},
+				{"mul", chi_mul},
+				{"mod", chi_mod},
+				{"pchar", chi_pchar},
+				{"pstr", chi_pstr},
 				{"rotl", chi_rotl},
 				{"rotr", chi_rotr},
-				{"que", chi_line},
-				{"state", chi_free_state},
+				{"queue", chi_queue},
+				{"stack", chi_stack},
 				{NULL, NULL}
 				};
 	unsigned int i = 0;

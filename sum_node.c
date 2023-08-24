@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * chi_sum_node - This adds node to the head stack
+ * chi_addnode - This adds node to the head stack
  * @head: This the head of the stack
  * @n: This is the new value
  * Return: nothing to return
 */
-void chi_sum_node(state_t **head, int n)
+void chi_addnode(state_t **head, int n)
 {
 
 	state_t *new_node, *auth;
