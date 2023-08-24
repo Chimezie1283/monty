@@ -1,14 +1,14 @@
 #include "monty.h"
 
 /**
- * chi_pall_f - This prints the stack
+ * chi_pall - This prints the stack
  * @head: The stack head
  * @kounta: This is not used
  * Return: nothing to return
 */
-void chi_pall_f(state_t **head, unsigned int kounta)
+void chi_pall(stack_t **head, unsigned int kounta)
 {
-	state_t *h;
+	stack_t *h;
 	(void)kounta;
 
 	h = *head;

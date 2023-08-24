@@ -6,9 +6,9 @@
   *@kounta: The line_number
   *Return: no return
  */
-void chi_rotl(state_t **head,  __attribute__((unused)) unsigned int kounta)
+void chi_rotl(stack_t **head,  __attribute__((unused)) unsigned int kounta)
 {
-	state_t *tmp = *head, *auth;
+	stack_t *tmp = *head, *auth;
 
 	if (*head == NULL || (*head)->next == NULL)
 	{

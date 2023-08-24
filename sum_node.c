@@ -6,13 +6,12 @@
  * @n: This is the new value
  * Return: nothing to return
 */
-void chi_addnode(state_t **head, int n)
+void chi_addnode(stack_t **head, int n)
 {
-
-	state_t *new_node, *auth;
+	stack_t *new_node, *auth;
 
 	auth = *head;
-	new_node = malloc(sizeof(state_t));
+	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{ printf("Error\n");
 		exit(0); }

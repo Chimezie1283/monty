@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	FILE *file;
 	size_t size = 0;
 	ssize_t read_line = 1;
-	state_t *state = NULL;
+	stack_t *stack = NULL;
 	unsigned int kounta = 0;
 
 	if (argc != 2)
@@ -38,11 +38,11 @@ int main(int argc, char *argv[])
 		kounta++;
 		if (read_line > 0)
 		{
-			execute(content, &state, kounta, file);
+			execute(content, &stack, kounta, file);
 		}
 		free(content);
 	}
-	f_state(state);
+	f_stack(stack);
 	fclose(file);
 return (0);
 }

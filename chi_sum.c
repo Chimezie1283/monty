@@ -6,9 +6,9 @@
  * @Kounta: The line number
  * Return: nothing to return
 */
-void chi_sum(state_t **head, unsigned int kounta)
+void chi_add(stack_t **head, unsigned int kounta)
 {
-	state_t *j;
+	stack_t *j;
 	int lent = 0, auth;
 
 	j = *head;
@@ -22,7 +22,7 @@ void chi_sum(state_t **head, unsigned int kounta)
 		fprintf(stderr, "L%d: can't add, stack too short\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
-		f_state(*head);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	j = *head;

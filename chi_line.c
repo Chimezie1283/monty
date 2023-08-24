@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
- * chi_line - This prints the top
+ * chi_queue - This prints the top
  * @head: stack head
  * kounta: The line_number
  * Return: no return
 */
-void chi_line(state_t **head, unsigned int kounta)
+void chi_queue(stack_t **head, unsigned int kounta)
 {
 	(void)head;
 	(void)kounta;
@@ -14,17 +14,17 @@ void chi_line(state_t **head, unsigned int kounta)
 }
 
 /**
- * chi_sum_que - This adds node to the tail stack
+ * chi_addqueue - This adds node to the tail stack
  * @n: The new_value
  * @head: The head of the stack
  * Return: no return
 */
-void chi_sum_que(state_t **head, int n)
+void chi_addqueue(stack_t **head, int n)
 {
-	state_t *new_node, *auth;
+	stack_t *new_node, *auth;
 
 	auth = *head;
-	new_node = malloc(sizeof(state_t));
+	new_node = malloc(sizeof(stack_t));
 	if (new_node == NULL)
 	{
 		printf("Error\n");

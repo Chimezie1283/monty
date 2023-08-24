@@ -6,9 +6,9 @@
  * @kounta: The line number
  * Return: nothing to return
 */
-void chi_div(state_t **head, unsigned int kounta)
+void chi_div(stack_t **head, unsigned int kounta)
 {
-	state_t *h;
+	stack_t *h;
 	int lent = 0, auth;
 
 	h = *head;
@@ -22,7 +22,7 @@ void chi_div(state_t **head, unsigned int kounta)
 		fprintf(stderr, "L%d: can't div, stack too short\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
-		f_state(*head);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
@@ -31,7 +31,7 @@ void chi_div(state_t **head, unsigned int kounta)
 		fprintf(stderr, "L%d: division by zero\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
-		f_state(*head);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	auth = h->next->n / h->n;

@@ -1,19 +1,19 @@
 #include "monty.h"
 
 /**
- * chi_print_f - This prints the top
+ * chi_pint - This prints the top
  * @head: The stack head
  * @kounta: The line number
  * Return: nothing to return
 */
-void chi_print_f(state_t **head, unsigned int kounta)
+void chi_pint(stack_t **head, unsigned int kounta)
 {
 	if (*head == NULL)
 	{
-		fprintf(stderr, "L%u: can't print, state empty\n", kounta);
+		fprintf(stderr, "L%u: can't pint, stack empty\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
-		f_state(*head);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	printf("%d\n", (*head)->n);

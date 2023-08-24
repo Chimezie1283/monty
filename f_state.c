@@ -1,12 +1,12 @@
 #include "monty.h"
 
 /**
-* f_state - This frees a doubly linked list
+* f_stack - This frees a doubly linked list
 * @head: The head of the stack
 */
-void f_state(state_t *head)
+void f_stack(stack_t *head)
 {
-	state_t *auth;
+	stack_t *auth;
 
 	auth = head;
 	while (head)

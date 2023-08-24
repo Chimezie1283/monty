@@ -6,16 +6,16 @@
  * @kounta: The line number
  * Return: nothing to return
 */
-void chi_pop(state_t **head, unsigned int kounta)
+void chi_pop(stack_t **head, unsigned int kounta)
 {
-	state_t *h;
+	stack_t *h;
 
 	if (*head == NULL)
 	{
-		fprintf(stderr, "L%d: can't pop an empty state\n", kounta);
+		fprintf(stderr, "L%d: can't pop an empty stack\n", kounta);
 		fclose(beast.file);
 		free(beast.content);
-		f_state(*head);
+		f_stack(*head);
 		exit(EXIT_FAILURE);
 	}
 	h = *head;
